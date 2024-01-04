@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator Matematik Segitiga</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Matematik Segitiga</h1>
+
+        
+        <!-- Image -->
+        <img src="images/perimetertriangle.jpg" alt="Perimeter Triangle Image" style="max-width: 100%; margin-top: 10px;">
+
+
+        <!-- Area Calculation Section -->
+        <div class="calculation-section">
+            <h2>Hitung Luas Segitiga</h2>
+            <form id="areaForm">
+                <label for="base">Base (b):</label>
+                <input type="number" id="base" required>
+
+                <label for="height">Height (h):</label>
+                <input type="number" id="height" required>
+
+                <button type="button" onclick="calculateArea()">Hitung Luas</button>
+            </form>
+
+            <div id="areaResult">
+                <p>Luas Segitiga: <span id="areaValue"></span></p>
+            </div>
+        </div>
+
+        <!-- Perimeter Calculation Section -->
+        <div class="calculation-section">
+            <h2>Hitung Keliling Segitiga</h2>
+            <form id="perimeterForm">
+                <label for="sideA">Sisi A:</label>
+                <input type="number" id="sideA" required>
+
+                <label for="sideB">Sisi B:</label>
+                <input type="number" id="sideB" required>
+
+                <label for="sideC">Sisi C:</label>
+                <input type="number" id="sideC" required>
+
+                <button type="button" onclick="calculatePerimeter()">Hitung Keliling</button>
+            </form>
+
+            <div id="perimeterResult">
+                <p>Keliling Segitiga: <span id="perimeterValue"></span></p>
+            </div>
+        </div>
+
+        <!-- Reset Button -->
+        <button onclick="resetValues()">Reset semua nilai</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
